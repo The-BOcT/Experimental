@@ -1,0 +1,21 @@
+{
+  "lang": "en",
+  "name": "The BOcT: Experimental Edition",
+  "short_name": "BOcT Experimental",
+  "start_url": "/Experimental/index.html",
+  "background_color": "#20B2AA",
+  "theme_color": "#E64C63",
+  "icons": [
+    {
+      "src": "/Experimental/boctstyle/icons/robot128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/Experimental/boctstyle/icons/robot512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "display": "standalone"
+}
