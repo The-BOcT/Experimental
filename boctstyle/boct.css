@@ -321,9 +321,10 @@ button{
   opacity: 1;
 }
 .add-button{
+  display: block;
   color: var(--blk-in-dark);
   background-color: var(--wit-in-dark);
-  margin: 5px auto;
+  margin: auto;
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
 }
