@@ -1,4 +1,4 @@
-window.onload = setTimeout(stopLoading, 2173);
+window.onload = setTimeout(stopLoading, 2713);
 document.getElementById('barr').addEventListener('animationend', ()=>{
   document.getElementById('textt').innerHTML = 'Load Complete';});
 
