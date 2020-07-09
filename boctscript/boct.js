@@ -37,7 +37,7 @@ function talk_div_hooman() {
   scroll_update();
   chat_boxx.value = "";
   const chat_contenta = chat_content.trim().toLowerCase();
-  setTimeout(proto_boct_study_chat, 800, chat_contenta);
+  setTimeout(proto_boct_study_chat, 10, chat_contenta);
 }
 
 talk_div_boct("Hi, I can partially understand you. Maybe, say hi to me or ask my age. But, Don't call me an idiot");

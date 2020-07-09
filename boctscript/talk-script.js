@@ -100,4 +100,32 @@ function proto_boct_study_chat(studycontent) {
       }
     }
   }
+//v1.2.1.83
+  if(studycontent[0] == '.' || studycontent[0] == '$'){
+    let comm = studycontent.slice(1,5);
+    switch (comm) {
+      case 'name':
+        talk_div_boct('BOcT');
+        break;
+      case 'age':
+        readage.reply();
+        break;
+      case 'god':
+        talk_div_boct('The-UCS-Variable');
+        break;
+      case 'v':
+        const ver = document.getElementsByClassName('release')[0];
+        talk_div_boct(`${ver.innerHTML} Experimental`);
+        break;
+      case 'url':
+        talk_div_boct('https://the-boct.github.io/Experimental/');
+        break;
+      case 'code':
+        talk_div_boct('https://github.com/The-BOcT/Experimental');
+        break;
+      default:
+        talk_div_boct('INVALID COMMAND');
+        break;
+    }
+  }
 }
