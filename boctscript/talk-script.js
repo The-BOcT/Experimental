@@ -123,9 +123,21 @@ function proto_boct_study_chat(studycontent) {
       case 'code':
         talk_div_boct('https://github.com/The-BOcT/Experimental');
         break;
+      case 'meow':
+        talk_div_boct('MeooW!.....MeeeeeeWww!');
       default:
         talk_div_boct('INVALID COMMAND');
         break;
     }
   }
 }
+
+/*
+valid letters: 
+A-Z
+a-z
+0-9
+.
+$
+=
+*/
