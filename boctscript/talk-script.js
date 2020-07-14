@@ -142,6 +142,7 @@ function proto_boct_study_chat(studycontent) {
         break;
     }
   }
+  
 }
 
 /*

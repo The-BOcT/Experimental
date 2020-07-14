@@ -148,14 +148,13 @@ button{
 }
 .bot-btn svg{
   fill: var(--wit-in-dark);
+  transition: all 0.05s linear;
 }
 .bot-btn svg:hover{
   fill: #ff1439;
-  transform: scale(1.15);
 }
 .bot-btn svg:active{
-  transition: all 0.05s linear;
-  transform: scale(1);
+  transform: scale(0.9);
 }
 
 /*chatter -----------------------------------------------------------*/
