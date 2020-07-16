@@ -69,3 +69,35 @@ window.onclick = function(event) {
     ipopup.style.display = "none";
   }
 }
+
+
+
+
+//setting
+var containn = document.querySelector('body');
+var main = document.querySelector('.alll');
+
+function toggleSidebar(){
+  isShowingSidebar() ? hideSidebar() : showSidebar();
+}
+
+function showSidebar(){
+  containn.classList.add('show-sidebar');
+}
+
+function hideSidebar(){
+  containn.classList.remove('show-sidebar');
+}
+
+function isShowingSidebar(){
+  return containn.classList.contains('show-sidebar');
+}
+
+document.querySelector('.seting').addEventListener('click', toggleSidebar, false);
+
+containn.addEventListener('click', (e)=>{
+  if(isShowingSidebar() && main.contains(e.target)){
+      e.preventDefault();
+      hideSidebar();
+  }
+}, true);

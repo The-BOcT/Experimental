@@ -408,4 +408,40 @@ And also: Thanks to
   background-color: var(--blk-in-dark);
 }
 
+
+
 /*Setting here*/
+.sidebar {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 290px;
+  background-color: var(--wit-in-dark);
+  overflow: hidden;
+  transform: translate3d(-295px, 0, 0);
+  transition-property: transform;
+  will-change: transform;
+}
+
+.sidebar, .sidebar a {
+  color: var(--blk-in-dark);
+}
+
+.nav-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-items li{
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Quicksand';
+}
+
+.show-sidebar .sidebar {
+  transform: translate3d(0, 0, 0);
+}
