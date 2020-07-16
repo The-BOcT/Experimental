@@ -71,32 +71,29 @@ window.onclick = function(event) {
 }
 
 
-
-
 //setting
-var containn = document.querySelector('body');
-var main = document.querySelector('.alll');
+var body = document.querySelector('body');
+var alll = document.querySelector('.alll');
+document.querySelector('#settingg').addEventListener('click', toggleSidebar, false);
 
 function toggleSidebar(){
   isShowingSidebar() ? hideSidebar() : showSidebar();
 }
 
 function showSidebar(){
-  containn.classList.add('show-sidebar');
+  body.classList.add('show-sidebar');
 }
 
 function hideSidebar(){
-  containn.classList.remove('show-sidebar');
+  body.classList.remove('show-sidebar');
 }
 
 function isShowingSidebar(){
-  return containn.classList.contains('show-sidebar');
+  return body.classList.contains('show-sidebar');
 }
 
-document.querySelector('.seting').addEventListener('click', toggleSidebar, false);
-
-containn.addEventListener('click', (e)=>{
-  if(isShowingSidebar() && main.contains(e.target)){
+body.addEventListener('click', (e)=>{
+  if(isShowingSidebar() && alll.contains(e.target)){
       e.preventDefault();
       hideSidebar();
   }

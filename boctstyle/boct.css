@@ -411,22 +411,20 @@ And also: Thanks to
 
 
 /*Setting here*/
-.sidebar {
+.settingbar {
   position: fixed;
   z-index: 5;
   top: 0;
   left: 0;
   height: 100%;
-  width: 290px;
+  width: 360px;
   background-color: var(--wit-in-dark);
+  color: var(--blk-in-dark);
   overflow: hidden;
-  transform: translate3d(-295px, 0, 0);
+  transform: translate3d(-365px, 0, 0);
   transition-property: transform;
   will-change: transform;
-}
-
-.sidebar, .sidebar a {
-  color: var(--blk-in-dark);
+  box-shadow: 0 0 30px black;
 }
 
 .nav-items {
@@ -436,12 +434,11 @@ And also: Thanks to
 }
 
 .nav-items li{
-  display: block;
   padding: 10px;
   text-align: center;
   font-family: 'Quicksand';
 }
 
-.show-sidebar .sidebar {
+.show-sidebar .settingbar {
   transform: translate3d(0, 0, 0);
 }
