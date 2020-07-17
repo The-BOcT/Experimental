@@ -145,7 +145,20 @@ button{
 }
 .bot-btn{
   padding: 0px;
+  animation: beepbeep 2.5s linear infinite;
 }
+@keyframes beepbeep{
+  0% {transform: scale(1);}
+  20% {transform: scale(1);}
+  25% {transform: scale(1.2);}
+  30%, 35% {transform: scale(1);}
+  40% {transform: scale(1.1);}
+  45% {transform: scale(1);}
+  50% {transform: scale(1.2);}
+  55% {transform: scale(1);}
+  100% {transform: scale(1);}
+}
+
 .bot-btn svg{
   fill: var(--wit-in-dark);
   transition: all 0.05s linear;

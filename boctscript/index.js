@@ -14,6 +14,7 @@ CLICK_BOT.addEventListener("click", BOcT_annoy_clicks);
 
 var click_count = 0;
 function BOcT_annoy_clicks() {
+  CLICK_BOT.style.animation = "none";
   click_count += 1;
   if (click_count === 4) {
     click_count = 0;
